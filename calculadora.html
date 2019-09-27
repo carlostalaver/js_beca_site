@@ -1,0 +1,49 @@
+<html>
+
+    <head>
+        <script type="text/javascript" src="./assets/js/calculadora.js"></script>
+        <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+        <title>Beca Angular JS</title>
+    </head>
+
+    <body>
+
+        <header>
+            <img src="./assets/img/angular.jpg"/>
+            <h1 class="title">Beca AngularJS</h1>
+            <div class="main">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./form.html">Formulario</a></li>
+                    <li><a href="./calculadora.html">Calculadora</a></li>
+                    <li><a href="./dv.html">¿ Cual es mi digito verificador ?</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="container">
+            <form method="POST" name="formulario" onsubmit="calcula(event)">
+                <fieldset>
+                    <legend>Calculadora</legend>
+                    <span>Número 1: </span> <input size="20" name="num1" onblur="validar(event)"><br>
+                    <span>Número 2: </span> <input size="20" name="num2" onblur="validar(event)"><br>
+                    <span>Operación: </span>
+                    <select name="operacion">
+                        <option value="suma">Suma</option>
+                        <option value="resta">Resta</option>
+                        <option value="multiplica">Multiplica</option>
+                        <option value="divide">Divide</option>
+                    </select><br>
+                </fieldset>
+                <br>
+                <label>El resultado de la operación es : <strong id="resultado"></strong></label>
+                <br>
+                <input class="button" type="submit" value="Calcular">
+            </form>
+        </div>
+
+        <footer></footer>
+
+    </body>
+
+</html>
